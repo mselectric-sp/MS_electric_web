@@ -93,16 +93,12 @@ modernos.
 
 <h2>Contacto</h2>
 
-<form>
-
-<input type="text" placeholder="Nombre" required>
-
-<input type="email" placeholder="Email" required>
-
-<textarea placeholder="Mensaje"></textarea>
-
-<button type="submit">Enviar</button>
-
+<form action="https://formspree.io/f/mojyapoa" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+    <input type="hidden" name="_subject" value="Nuevo cliente desde la web">
+    <button type="submit">Enviar</button>
 </form>
 
 </section>
