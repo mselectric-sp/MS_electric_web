@@ -2,18 +2,31 @@
 <html lang="es">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mi Empresa</title>
+
+<title>M&S Electric Solutions</title>
 
 <link rel="stylesheet" href="style.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXX"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-XXXX');
+</script>
 
 </head>
 
 <body>
 
 <header>
-<h1>Mi Empresa</h1>
+
+<h1>M&S Electric Solutions</h1>
 
 <nav>
 <a href="#inicio">Inicio</a>
@@ -21,41 +34,40 @@
 <a href="#nosotros">Nosotros</a>
 <a href="#contacto">Contacto</a>
 </nav>
+
 </header>
 
 
 <section id="inicio" class="hero">
 
-<h2>Soluciones profesionales para tu negocio</h2>
+<h2>Soluciones digitales para empresas</h2>
 
-<p>
-Ayudamos a empresas a crecer con tecnología, innovación y desarrollo web.
-</p>
+<p>Ayudamos a empresas a crecer con tecnología y desarrollo web.</p>
 
-<button onclick="scrollContacto()">Contactar</button>
+<a class="btn" href="#contacto">Solicitar información</a>
 
 </section>
 
 
 <section id="servicios">
 
-<h2>Nuestros Servicios</h2>
+<h2>Servicios</h2>
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
 <h3>Desarrollo Web</h3>
-<p>Creación de páginas web modernas y rápidas.</p>
+<p>Webs modernas optimizadas para empresas.</p>
 </div>
 
 <div class="card">
 <h3>Software</h3>
-<p>Aplicaciones personalizadas para empresas.</p>
+<p>Aplicaciones personalizadas para tu negocio.</p>
 </div>
 
 <div class="card">
 <h3>Consultoría</h3>
-<p>Optimización tecnológica para tu negocio.</p>
+<p>Optimización digital y automatización.</p>
 </div>
 
 </div>
@@ -67,9 +79,11 @@ Ayudamos a empresas a crecer con tecnología, innovación y desarrollo web.
 
 <h2>Sobre Nosotros</h2>
 
+<img src="images/team.jpg" alt="Equipo">
+
 <p>
-Somos un equipo dedicado a crear soluciones digitales modernas
-para empresas que quieren crecer.
+Somos una empresa especializada en soluciones digitales para negocios
+modernos.
 </p>
 
 </section>
@@ -96,12 +110,31 @@ para empresas que quieren crecer.
 
 <footer>
 
-<p>© 2026 Mi Empresa</p>
+<p>© 2026 M&S Electric Solutions</p>
 
 </footer>
+
+
+<!-- Botón WhatsApp -->
+
+<a href="https://wa.me/34651573056" class="whatsapp" target="_blank">
+💬
+</a>
+
+
+<!-- Banner Cookies -->
+
+<div id="cookies">
+
+<p>Esta web usa cookies para mejorar la experiencia.</p>
+
+<button onclick="aceptarCookies()">Aceptar</button>
+
+</div>
 
 
 <script src="script.js"></script>
 
 </body>
+
 </html>

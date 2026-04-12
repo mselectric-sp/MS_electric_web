@@ -1,15 +1,14 @@
 body{
-    font-family: Arial;
+    font-family:Arial;
     margin:0;
-    background:#f5f5f5;
+    background:#f4f4f4;
     }
     
     header{
-    background:#222;
+    background:#111;
     color:white;
     display:flex;
     justify-content:space-between;
-    align-items:center;
     padding:20px;
     }
     
@@ -20,29 +19,29 @@ body{
     }
     
     .hero{
-    text-align:center;
-    padding:100px 20px;
-    background:#4f46e5;
+    background:url("images/office.jpg");
+    background-size:cover;
     color:white;
+    text-align:center;
+    padding:120px 20px;
     }
     
-    .hero button{
+    .btn{
+    background:#2563eb;
+    padding:12px 20px;
+    color:white;
+    text-decoration:none;
+    display:inline-block;
     margin-top:20px;
-    padding:10px 20px;
-    font-size:16px;
-    border:none;
-    background:white;
-    color:#4f46e5;
-    cursor:pointer;
     }
     
     section{
-    padding:60px 20px;
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
+    padding:60px 20px;
     }
     
-    .cards{
+    .grid{
     display:flex;
     gap:20px;
     flex-wrap:wrap;
@@ -53,34 +52,66 @@ body{
     padding:20px;
     flex:1;
     min-width:250px;
+    border-radius:8px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+    }
+    
+    img{
+    max-width:100%;
     border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
     }
     
     form{
     display:flex;
     flex-direction:column;
-    gap:10px;
     max-width:400px;
+    gap:10px;
     }
     
     input,textarea{
     padding:10px;
-    font-size:16px;
     }
     
     button{
-    padding:10px;
-    background:#4f46e5;
+    background:#2563eb;
     color:white;
     border:none;
+    padding:10px;
     cursor:pointer;
     }
     
     footer{
-    background:#222;
+    background:#111;
     color:white;
     text-align:center;
     padding:20px;
-    margin-top:40px;
+    }
+    
+    /* WhatsApp */
+    
+    .whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25d366;
+    color:white;
+    font-size:30px;
+    padding:15px;
+    border-radius:50%;
+    text-decoration:none;
+    }
+    
+    /* Cookies */
+    
+    #cookies{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#222;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    padding:15px;
     }

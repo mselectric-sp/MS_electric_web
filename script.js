@@ -1,7 +1,11 @@
-function scrollContacto(){
-
-    document
-    .getElementById("contacto")
-    .scrollIntoView({behavior:"smooth"});
-    
+if(localStorage.getItem("cookiesAceptadas")){
+    document.getElementById("cookies").style.display="none"
     }
+    
+    function aceptarCookies(){
+    
+    localStorage.setItem("cookiesAceptadas","true")
+    
+    document.getElementById("cookies").style.display="none"
+    
+}
