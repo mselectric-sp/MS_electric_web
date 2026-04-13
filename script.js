@@ -1,13 +1,36 @@
+function ajustarWhatsApp() {
+  const banner = document.getElementById("cookies");
+  const boton = document.querySelector(".whatsapp");
+
+  if (banner && banner.style.display !== "none") {
+    const altura = banner.offsetHeight;
+    boton.style.bottom = (altura + 20) + "px";
+  } else {
+    boton.style.bottom = "20px";
+  }
+}
+
+// Al cargar la página
+window.addEventListener("load", ajustarWhatsApp);
+
+// Si banner tarda en aparecer
+setTimeout(ajustarWhatsApp, 300);
+
+// Por si cambia el tamaño (móvil, etc.)
+window.addEventListener("resize", ajustarWhatsApp);
+
 if(localStorage.getItem("cookiesAceptadas")){
-    document.getElementById("cookies").style.display="none"
-    }
-    
-    function aceptarCookies(){
-    
-    localStorage.setItem("cookiesAceptadas","true")
-    
-    document.getElementById("cookies").style.display="none"
-    
+  document.getElementById("cookies").style.display="none";
+}
+
+ajustarWhatsApp();
+
+// Cuando se aceptan cookies
+function aceptarCookies(){
+  localStorage.setItem("cookiesAceptadas","true");
+  document.getElementById("cookies").style.display="none";
+
+  ajustarWhatsApp(); // recalcula
 }
 
 const form = document.getElementById("formulario");
