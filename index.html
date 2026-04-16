@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>M&S Electric Solutions</title>
+<title>Voltarix Solutions</title>
 
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/png" href="/favicon.png">
@@ -27,7 +27,7 @@ gtag('config', 'G-XXXX');
 
 <header>
 
-<h1>M&S Electric Solutions</h1>
+<h1>Voltarix Solutions</h1>
 
 <nav>
 <a href="#inicio">Inicio</a>
@@ -41,52 +41,141 @@ gtag('config', 'G-XXXX');
 
 <section id="inicio" class="hero">
 
-<h2>Soluciones digitales para empresas</h2>
+<h2>Certificados energéticos y servicios eléctricos profesionales</h2>
 
-<p>Ayudamos a empresas a crecer con tecnología y desarrollo web.</p>
+<p>Emitimos certificados energéticos, boletines eléctricos y proyectos eléctricos para viviendas, locales y empresas.
+Rápido, legal y al mejor precio.</p>
 
-<a class="btn" href="#contacto">Solicitar información</a>
+<a class="btn" href="#contacto" onclick="setServicio('Información general')">Solicitar información</a>
 
 </section>
 
 
 <section id="servicios">
+  <h2>Nuestros Servicios</h2>
+  <p class="servicios-intro">
+    Soluciones técnicas profesionales para cumplir la normativa energética y eléctrica de forma rápida y segura.
+  </p>
 
-<h2>Servicios</h2>
+  <div class="grid">
 
-<div class="grid">
+    <!-- Certificados Energéticos -->
+    <div class="card">
+      <div class="card-icon">
+        <i class="fa-solid fa-house-circle-check"></i>
+      </div>
+      <h3>Certificados Energéticos</h3>
 
-<div class="card">
-<h3>Desarrollo Web</h3>
-<p>Webs modernas optimizadas para empresas.</p>
-</div>
+      <p class="card-text">
+        Documento obligatorio para la venta o alquiler de inmuebles, emitido por técnico competente según la normativa vigente.
+      </p>
+      <h4>✅ Qué incluye el servicio</h4>
+      <ul>
+        <li>Visita técnica al inmueble</li>
+        <li>Análisis y calificación energética</li>
+        <li>Registro oficial del certificado</li>
+        <li>Entrega de certificado y etiqueta energética</li>
+      </ul>
+      <h4>🏠 Para quién es</h4>
+      <ul>
+        <li>Viviendas</li>
+        <li>Locales comerciales</li>
+        <li>Oficinas</li>
+        <li>Edificios completos</li>
+      </ul>
+    <a href="#contacto" class="btn" onclick="setServicio('Certificado Energético')">Solicitar certificado</a>
+    </div>
 
-<div class="card">
-<h3>Software</h3>
-<p>Aplicaciones personalizadas para tu negocio.</p>
-</div>
+    <!-- Boletines Eléctricos -->
+    <div class="card">
+      <div class="card-icon">
+        <i class="fa-solid fa-bolt"></i>
+      </div>
+      <h3>Boletines Eléctricos (CIE)</h3>
 
-<div class="card">
-<h3>Consultoría</h3>
-<p>Optimización digital y automatización.</p>
-</div>
+      <p class="card-text">
+        El Certificado de Instalación Eléctrica acredita que la instalación cumple la normativa y es apta para su uso.
+      </p>
+      <h4>⚡ Cuándo lo necesitas</h4>
+      <ul>
+        <li>Alta nueva del suministro eléctrico</li>
+        <li>Cambio de potencia o titular</li>
+        <li>Instalaciones antiguas</li>
+        <li>Reformas eléctricas</li>
+      </ul>
+      <h4>🛠 Qué hacemos</h4>
+      <ul>
+        <li>Inspección técnica de la instalación</li>
+        <li>Adecuación a normativa (si procede)</li>
+        <li>Emisión y entrega del boletín oficial</li>
+      </ul>
+      <a href="#contacto" class="btn" onclick="setServicio('Boletín Eléctrico')">Solicitar boletín</a>
+    </div>
 
-</div>
-
+    <!-- Proyectos Eléctricos -->
+    <div class="card">
+      <div class="card-icon">
+        <i class="fa-solid fa-file-lines"></i>
+      </div>
+      <h3>Proyectos Eléctricos</h3>
+      <p class="card-text">
+        Redacción y legalización de proyectos eléctricos para instalaciones nuevas o existentes.
+      </p>
+      <h4>📐 Tipos de proyectos</h4>
+      <ul>
+        <li>Instalaciones de baja tensión</li>
+        <li>Locales comerciales</li>
+        <li>Naves industriales</li>
+        <li>Comunidades de vecinos</li>
+        <li>Instalaciones fotovoltaicas</li>
+      </ul>
+      <h4>📑 Incluye</h4>
+      <ul>
+        <li>Memoria técnica o proyecto completo</li>
+        <li>Cálculos eléctricos</li>
+        <li>Planos</li>
+        <li>Dirección técnica (si aplica)</li>
+        <li>Legalización ante organismo competente</li>
+      </ul>
+      <a href="#contacto" class="btn" onclick="setServicio('Proyecto Eléctrico')">Solicitar proyecto</a>
+    </div>
+  </div>
 </section>
 
-
 <section id="nosotros">
-
-<h2>Sobre Nosotros</h2>
-
-<img src="images/team.jpg" alt="Equipo">
-
-<p>
-Somos una empresa especializada en soluciones digitales para negocios
-modernos.
-</p>
-
+  <div class="nosotros-contenido">
+    <div class="nosotros-texto">
+      <h2>Sobre Nosotros</h2>
+      <p class="intro">
+        Somos una empresa especializada en certificaciones energéticas y servicios eléctricos,
+        formada por técnicos e ingenieros colegiados con amplia experiencia.
+      </p>
+      <ul class="valores">
+        <li><i class="fa-solid fa-user-shield"></i> Técnicos e ingenieros colegiados</li>
+        <li><i class="fa-solid fa-scale-balanced"></i> Cumplimiento estricto de la normativa vigente</li>
+        <li><i class="fa-solid fa-clock"></i> Entrega rápida y sin complicaciones</li>
+        <li><i class="fa-solid fa-handshake"></i> Atención cercana y personalizada</li>
+        <li><i class="fa-solid fa-tag"></i> Precios cerrados y sin sorpresas</li>
+      </ul>
+      <h3>Cómo trabajamos</h3>
+      <ol class="proceso">
+        <li>Contactas con nosotros</li>
+        <li>Analizamos tu caso y visitamos el inmueble si es necesario</li>
+        <li>Realizamos el estudio técnico correspondiente</li>
+        <li>Entregamos la documentación oficial perfectamente legalizada</li>
+      </ol>
+      <p class="ambito">
+        Trabajamos en viviendas, locales comerciales, oficinas, naves industriales
+        y comunidades de vecinos.
+      </p>
+      <p class="zona">
+        <i class="fa-solid fa-location-dot"></i> Servicio en <strong>Madrid y alrededores</strong>
+      </p>
+    </div>
+    <div class="nosotros-imagen">
+      <img src="images/team.jpg" alt="Equipo técnico especializado en certificaciones energéticas">
+    </div>
+  </div>
 </section>
 
 
@@ -95,7 +184,8 @@ modernos.
 <h2>Contacto</h2>
 
 <form id="formulario">
-
+<input type="hidden" name="servicio" id="servicio" value="Información general">
+<!-- <p id="servicio-texto">Consulta: Información general</p> -->
 <input type="text" name="nombre" placeholder="Nombre" required>
 
 <input type="email" name="email" placeholder="Email" required>
@@ -113,11 +203,14 @@ Nos pondremos en contacto con la mayor brevedad posible.
 </section>
 
 
-<footer>
 
-<p>© 2026 M&S Electric Solutions</p>
-
+<footer id="footer">
+  <div class="footer-content">
+    <img src="favicon.png" alt="Voltarix Solutions" class="footer-logo">
+    <p>© 2026 Voltarix Solutions</p>
+  </div>
 </footer>
+
 
 
 <!-- Botón WhatsApp -->
@@ -141,6 +234,15 @@ Nos pondremos en contacto con la mayor brevedad posible.
   window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
 </script>
 <script defer src="script.js"></script>
+
+<script>
+  function setServicio(tipo) {
+    document.getElementById('servicio').value = tipo;
+    document.getElementById('servicio-texto').innerText =
+      'Consulta: ' + tipo;
+  }
+</script>
+
 
 </body>
 
