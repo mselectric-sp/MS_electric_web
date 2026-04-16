@@ -271,7 +271,7 @@ textarea {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: #1e6091;
+  background: linear-gradient(90deg, #111827, #1f2937);
   color: #ffffff;
   display: flex;
   justify-content: center;
