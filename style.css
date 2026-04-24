@@ -242,6 +242,16 @@ textarea {
   width: 100px;
 }
 
+#footer a {
+  color: orange;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
 /* =======================
    WHATSAPP
 ======================= */
