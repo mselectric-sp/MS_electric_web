@@ -143,6 +143,14 @@ section {
   margin-bottom: 20px;
 }
 
+.card-main {
+  min-height: 190px;
+}
+
+.card-block {
+  min-height: 250px;
+}
+
 .card h4 {
   margin-top: 15px;
   font-size: 1rem;
@@ -348,7 +356,7 @@ textarea {
 
 .zona {
   font-weight: 600;
-  color: #2e7d32;
+  color:  #e67700;
   display: flex;
   gap: 8px;
   align-items: center;

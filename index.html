@@ -58,15 +58,18 @@
 
   <div class="grid">
 <!-- Proyectos Eléctricos y dirección de obras -->
-    <div class="card">
-      <div class="card-icon">
-        <i class="fa-solid fa-file-lines"></i>
-      </div>
-      <h3>Proyectos Eléctricos y Dirección de Obra</h3>
+  <div class="card">
+    <div class="card-icon">
+      <i class="fa-solid fa-file-lines"></i>
+    </div>
+    <h3>Proyectos Eléctricos y Dirección de Obra</h3>
+    <div class="card-main">
       <p class="card-text">
         Redacción y legalización de proyectos para instalaciones nuevas o existentes en baja tensión. 
         Contamos con ingenieros industriales para la elaboración y visado a través del Colegio Oficial de Ingenieros Industriales de Madrid (COIIM).
       </p>
+    </div>
+    <div class="card-block">
       <h4>📐 Tipos de proyectos</h4>
       <ul>
         <li>Instalaciones de baja tensión</li>
@@ -75,6 +78,8 @@
         <li>Comunidades de vecinos</li>
         <li>Instalaciones fotovoltaicas</li>
       </ul>
+    </div>
+    <div class="card-block">
       <h4>📑 Incluye</h4>
       <ul>
         <li>Memoria técnica o proyecto</li>
@@ -83,8 +88,9 @@
         <li>Dirección de obra</li>
         <li>Legalización ante organismo competente</li>
       </ul>
-      <a href="#contacto" class="btn" onclick="setServicio('Proyecto Eléctrico')">Solicitar proyecto</a>
     </div>
+    <a href="#contacto" class="btn" onclick="setServicio('Proyecto Eléctrico')">Solicitar proyecto</a>
+  </div>
 
     <!-- Instalaciones y Boletines Eléctricos -->
     <div class="card">
@@ -92,23 +98,28 @@
         <i class="fa-solid fa-bolt"></i>
       </div>
       <h3>Instalaciones y Boletines Eléctricos (CIE)</h3>
-
-      <p class="card-text">
-        Además de contar con equipo para acometer las actuaciones, podemos tramitar los Certificados de Instalaciones Eléctricas (boletines eléctricos).
-      </p>
-      <h4>⚡ Cuándo lo necesitas</h4>
-      <ul>
-        <li>Alta  de nuevo suministro eléctrico</li>
-        <li>Cambio de potencia</li>
-        <li>Instalaciones antiguas</li>
-        <li>Reformas eléctricas</li>
-      </ul>
-      <h4>🛠 Qué hacemos</h4>
-      <ul>
-        <li>Inspección técnica de la instalación</li>
-        <li>Tramitación ante organismo competente</li>
-        <li>Emisión y entrega del boletín oficial</li>
-      </ul>
+      <div class="card-main">
+        <p class="card-text">
+          Además de contar con equipo para acometer las actuaciones, podemos tramitar los Certificados de Instalaciones Eléctricas (boletines eléctricos).
+        </p>
+      </div>
+      <div class="card-block">
+        <h4>⚡ Cuándo lo necesitas</h4>
+        <ul>
+          <li>Alta  de nuevo suministro eléctrico</li>
+          <li>Cambio de potencia</li>
+          <li>Instalaciones antiguas</li>
+          <li>Reformas eléctricas</li>
+        </ul>
+      </div>
+      <div class="card-block">
+        <h4>🛠 Qué hacemos</h4>
+        <ul>
+          <li>Inspección técnica de la instalación</li>
+          <li>Tramitación ante organismo competente</li>
+          <li>Emisión y entrega del boletín oficial</li>
+        </ul>
+      </div>
       <a href="#contacto" class="btn" onclick="setServicio('Boletín Eléctrico')">Solicitar boletín</a>
     </div>
 
@@ -118,25 +129,30 @@
         <i class="fa-solid fa-house-circle-check"></i>
       </div>
       <h3>Certificados de Eficiencia Energética</h3>
-
-      <p class="card-text">
-        Documento obligatorio para la venta o alquiler de inmuebles, emitido por técnico competente.
-      </p>
-      <h4>✅ Qué incluye el servicio</h4>
-      <ul>
-        <li>Visita técnica al inmueble</li>
-        <li>Análisis y calificación energética</li>
-        <li>Registro oficial del certificado</li>
-        <li>Entrega de certificado y etiqueta energética</li>
-      </ul>
+      <div class="card-main">
+        <p class="card-text">
+          Documento obligatorio para la venta o alquiler de inmuebles, emitido por técnico competente.
+        </p>
+      </div>
+      <div class="card-block">
+        <h4>✅ Qué incluye el servicio</h4>
+        <ul>
+          <li>Visita técnica al inmueble</li>
+          <li>Análisis y calificación energética</li>
+          <li>Registro oficial del certificado</li>
+          <li>Entrega de certificado y etiqueta energética</li>
+        </ul>
+      </div>
+      <div class="card-block">
       <h4>🏠 Para quién es</h4>
-      <ul>
-        <li>Viviendas</li>
-        <li>Locales comerciales</li>
-        <li>Oficinas</li>
-        <li>Edificios completos</li>
-      </ul>
-    <a href="#contacto" class="btn" onclick="setServicio('Certificado Energético')">Solicitar certificado</a>
+        <ul>
+          <li>Viviendas</li>
+          <li>Locales comerciales</li>
+          <li>Oficinas</li>
+          <li>Edificios completos</li>
+        </ul>
+      </div>
+      <a href="#contacto" class="btn" onclick="setServicio('Certificado Energético')">Solicitar certificado</a>
     </div>
   </div>
 </section>
@@ -184,18 +200,18 @@
 <form id="formulario">
 <input type="hidden" name="servicio" id="servicio" value="Información general">
 <!-- <p id="servicio-texto">Consulta: Información general</p> -->
-<input type="text" name="nombre" placeholder="Nombre" required>
+<input type="text" name="nombre" placeholder="Nombre" required autocomplete="Nombre">
 
-<input type="email" name="email" placeholder="Email" required>
+<input type="email" name="email" placeholder="Email" required autocomplete="email">
 
-<textarea name="mensaje" placeholder="Mensaje" required></textarea>
+<textarea name="mensaje" placeholder="Mensaje" required autocomplete="Mensaje"></textarea>
 
 <button type="submit">Enviar</button>
 
 </form>
 
-<p id="mensaje-exito" style="display:none; color:green; font-size:18px; margin-top:20px;">
-✅ Gracias, su solicitud ha sido registrada.<br>
+<p id="mensaje-exito" style="display:none; color:#ff8c00; font-size:18px; margin-top:20px;">
+Gracias, su solicitud ha sido registrada.<br>
 Nos pondremos en contacto con la mayor brevedad posible.
 </p>
 </section>
