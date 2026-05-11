@@ -61,5 +61,4 @@ form.addEventListener("submit", async function(e){
   } else {
     alert("Hubo un error, inténtalo de nuevo");
   }
-  form.style.display = "none";
 });

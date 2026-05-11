@@ -5,10 +5,10 @@
 :root {
   --color-primary: #ff8c00;        /* Naranja botones */
   --color-primary-dark: #e67700;
-  --color-accent: #4dabf7;         /* Azul acento */
-  --color-bg: #e6f2ff;             /* Fondo azul claro */
-  --color-dark: #0b3c5d;           /* Azul oscuro header/footer */
-  --color-text: #1f2933;
+  --color-accent: #266b35;         /* Verde acento */
+  --color-bg: #b9d1bd;             /* Fondo verde claro */
+  --color-dark: #0b5d1d;           /* Verde oscuro header/footer */
+  --color-text: #00360d;
 
   --radius-sm: 6px;
   --radius-md: 12px;
@@ -43,7 +43,7 @@ img {
 ======================= */
 
 header {
-  background: linear-gradient(90deg, #111827, #1f2937);
+  background: linear-gradient(90deg, #112719, #1f3726);
   color: #ffffff;
   padding: 20px;
   display: flex;
@@ -68,12 +68,20 @@ nav a:hover {
 
 .hero {
   background:
-    linear-gradient(rgba(11, 60, 93, 0.7), rgba(30, 96, 145, 0.7)),
-    url("images/office.jpg") center / cover no-repeat;
+  linear-gradient(rgba(20, 120, 60, 0.5), rgba(60, 170, 110, 0.5)),
+  url("images/office.jpg") center / cover no-repeat;
   color: #ffffff;
   text-align: center;
   padding: 120px 20px;
 }
+
+@media (max-width: 768px) {
+  .hero {
+    text-align: left;
+    padding: 100px 30px;
+  }
+}
+
 
 /* =======================
    SECTIONS
@@ -104,7 +112,7 @@ section {
 .servicios-intro {
   max-width: 800px;
   margin: 0 auto 50px;
-  color: #475569;
+  color: #476951;
 }
 
 /* =======================
@@ -148,7 +156,7 @@ section {
 }
 
 .card-block {
-  min-height: 250px;
+  min-height: 280px;
 }
 
 .card h4 {
@@ -210,7 +218,7 @@ input,
 textarea {
   padding: 12px;
   border-radius: var(--radius-sm);
-  border: 1px solid #cbd5e1;
+  border: 1px solid #cbe1cc;
   font-family: inherit;
 }
 
@@ -219,7 +227,7 @@ textarea {
 ======================= */
 
 #footer {
-  background: linear-gradient(90deg, #111827, #1f2937);
+  background: linear-gradient(90deg, #112719, #1f3726);
   color: #ffffff;
   display: flex;
   justify-content: space-between;
@@ -235,7 +243,8 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  color: #cbd5e1;
+  flex-wrap: wrap; /* ✅ permite salto de línea */
+  color: #cbe1d1;
 }
 
 .footer-logo {
@@ -250,6 +259,17 @@ textarea {
 
 #footer a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* ✅ uno debajo de otro */
+    gap: 10px;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
 }
 
 /* =======================
